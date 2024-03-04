@@ -29,6 +29,7 @@ body {
   background-color: $bg-color;
 
   #root {
+    max-width: 1280px;
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
@@ -44,6 +45,9 @@ body {
   overflow: hidden;
   border: 10px solid #b8c6b8;
   padding: 2px;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 400px;
 }
 
 .inPosition {
