@@ -34,7 +34,7 @@ function Puzzle() {
   };
 
   return (
-    <Container className="position-relative custom-style">
+    <Container className="position-relative">
       <StatusMessage status={gameStatus} time={time} />
       <div className="board-container">
         <Board numbers={numbers} onTileClick={moveTileOnClick} />

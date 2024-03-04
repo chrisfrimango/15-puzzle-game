@@ -24,7 +24,6 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  // min-width: 320px;
   min-height: 100vh;
   background-color: $bg-color;
 
@@ -35,16 +34,10 @@ body {
   }
 }
 
-.custom-style {
-  max-width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
 .board-container {
   display: grid;
-  grid-template-columns: repeat(4, 100px);
-  grid-template-rows: repeat(4, 100px);
+  grid-template-columns: repeat(4, 80px);
+  grid-template-rows: repeat(4, 80px);
   border-radius: 10px;
   position: relative;
   overflow: hidden;
