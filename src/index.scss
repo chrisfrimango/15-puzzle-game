@@ -1,0 +1,61 @@
+$font-stack: "Open-Sans", system-ui, Avenir, Helvetica, Arial, sans-serif;
+$base-line-height: 1.5;
+$base-font-weight: 400;
+$bg-color: #608b71;
+$status-color: #250424;
+$inPosition: rgb(32, 79, 32);
+$notInPosition: rgb(113, 22, 113);
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+  font-family: $font-stack;
+  line-height: $base-line-height;
+  font-weight: $base-font-weight;
+
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: $bg-color;
+
+  #root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+}
+
+.board-container {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  border: 10px solid #b8c6b8;
+  padding: 2px;
+}
+
+.inPosition {
+  background-color: $inPosition;
+}
+
+.notInPosition {
+  background-color: $notInPosition;
+}
+
+.disabled {
+  display: none;
+  background-color: transparent;
+}
